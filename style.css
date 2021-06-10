@@ -1,0 +1,61 @@
+@import url("https://fonts.gooogleapis.com/css?family=Montserat:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+button {
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 80px 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+button:hover {
+  border: 5px solid white;
+  margin: 40px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+.btnMrg{
+  margin: 45px;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
